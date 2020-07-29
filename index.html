@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <meta charset="UTF-8">
+    <title>FetchでGET送信</title>
+</head>
+<body>
+    <section>
+        <h1>あなたのお名前なんて〜の？</h1>
+            <p>Formで教える</p>
+            <form method="post" action="index.html">
+                <input type="text" name="name" size="30" maxlength="30">
+                <input type="submit" value="送信">
+            </form>
+            <p>Fetchで教える</p>
+            <input type="text" name="name" size="30" maxlength="30" class="name">
+            <input type="button" value="送信" class="btn">  
+    </section> 
+    <script src="js/get_fetch.js"></script>
+</body>
+</html>

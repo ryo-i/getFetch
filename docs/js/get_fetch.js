@@ -1,14 +1,14 @@
+const fetchForm = document.querySelector('.fetchForm');
 const btn = document.querySelector('.btn');
 const name = document.querySelector('.name');
-const url = 'index.html';
+const url = 'https://ryo-i.github.io/getFetch/docs/json/res.json';
 
 const getFetch = () => {
-    const nameVal = name.value;
-    const params = {"name": nameVal};
+    let formData = new FormData(fetchForm);
 
     fetch(url, {
         method: 'POST',
-        body: JSON.stringify(params)
+        body: formData
     }).then((response) => {
         if(!response.ok) {
             console.log('error!');
@@ -17,7 +17,6 @@ const getFetch = () => {
         return response.json();
     }).then((data)  => {
         console.log(data);
-        // 処理
     }).catch((error) => {
         console.log(error);
     });

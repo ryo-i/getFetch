@@ -7,14 +7,16 @@
 <body>
     <section>
         <h1>あなたのお名前なんて〜の？</h1>
-            <p>Formで教える</p>
-            <form method="post" action="index.html">
+            <p>Formで答える</p>
+            <form method="post" action="https://ryo-i.github.io/getFetch/docs/json/res.json">
                 <input type="text" name="name" size="30" maxlength="30">
                 <input type="submit" value="送信">
             </form>
-            <p>Fetchで教える</p>
-            <input type="text" name="name" size="30" maxlength="30" class="name">
-            <input type="button" value="送信" class="btn">  
+            <p>Fetchで答える</p>
+            <form class="fetchForm">
+                <input type="text" name="name" size="30" maxlength="30" class="name">
+                <input type="button" value="送信" class="btn">      
+            </form>
     </section> 
     <script src="js/get_fetch.js"></script>
 </body>

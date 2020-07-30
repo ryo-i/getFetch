@@ -1,7 +1,7 @@
 const fetchForm = document.querySelector('.fetchForm');
 const btn = document.querySelector('.btn');
 const name = document.querySelector('.name');
-const url = 'https://ryo-i.github.io/getFetch/docs/json/res.json';
+const url = 'json/res.json';
 
 const getFetch = () => {
     let formData = new FormData(fetchForm);

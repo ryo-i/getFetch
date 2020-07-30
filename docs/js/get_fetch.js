@@ -1,7 +1,7 @@
 const fetchForm = document.querySelector('.fetchForm');
 const btn = document.querySelector('.btn');
 const name = document.querySelector('.name');
-const url = 'http://my-json-server.typicode.com/ryo-i/testDB/data';
+const url = 'https://my-json-server.typicode.com/ryo-i/testDB/data';
 
 const getFetch = () => {
     let formData = new FormData(fetchForm);

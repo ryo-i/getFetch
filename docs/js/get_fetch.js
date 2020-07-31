@@ -1,10 +1,12 @@
 const fetchForm = document.querySelector('.fetchForm');
 const btn = document.querySelector('.btn');
-const name = document.querySelector('.name');
-const url = 'https://jsonplaceholder.typicode.com/posts';
+const url = 'https://jsonplaceholder.typicode.com/posts/';
 
 const getFetch = () => {
     let formData = new FormData(fetchForm);
+    for (let value of formData.entries()) {
+        console.log(value);
+    }
 
     fetch(url, {
         method: 'POST',
@@ -13,7 +15,7 @@ const getFetch = () => {
         if(!response.ok) {
             console.log('error!');
         } 
-        console.log("ok!");
+        console.log('ok!');
         return response.json();
     }).then((data)  => {
         console.log(data);

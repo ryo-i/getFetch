@@ -2,7 +2,7 @@ const fetchForm = document.querySelector('.fetchForm');
 const btn = document.querySelector('.btn');
 const url = 'https://jsonplaceholder.typicode.com/posts/';
 
-const getFetch = () => {
+const postFetch = () => {
     let formData = new FormData(fetchForm);
     for (let value of formData.entries()) {
         console.log(value);
@@ -24,4 +24,4 @@ const getFetch = () => {
     });
 };
 
-btn.addEventListener('click', getFetch, false);
+btn.addEventListener('click', postFetch, false);
